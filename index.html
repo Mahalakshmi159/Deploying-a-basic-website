@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DevOps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+
+        .step-card {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            border-left: 4px solid #4f46e5;
+        }
+
+        .step-card:hover {
+            transform: translateX(5px);
+            background-color: #f8fafc;
+        }
+
+        .platform-card {
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #e2e8f0;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-2px);
+            border-color: #4f46e5;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .simple-terminal {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .command { color: #10b981; }
+        .comment { color: #6b7280; }
+
+        .highlight {
+            background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-weight: 500;
+        }
+
+        .simple-diagram {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border: 2px dashed #cbd5e1;
+        }
+
+        nav a.active {
+            color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-xl font-bold text-blue-600">DevOps</span>
+                    <span class="text-xl font-bold text-gray-700">Beginner</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#what-is-devops" class="text-gray-600 hover:text-blue-600 transition-colors">What is DevOps?</a>
+                    <a href="#deployment" class="text-gray-600 hover:text-blue-600 transition-colors">Deployment</a>
+                    <a href="#ci-cd" class="text-gray-600 hover:text-blue-600 transition-colors">CI/CD</a>
+                    <a href="#platforms" class="text-gray-600 hover:text-blue-600 transition-colors">Platforms</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-6">Welcome to DevOps!</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">Learn the basics of deploying websites and understanding DevOps concepts</p>
+            <div class="flex justify-center space-x-4 flex-wrap gap-4">
+                <a href="#what-is-devops" class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Start Learning
+                </a>
+                <a href="#deployment" class="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    Try Deployment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections: What is DevOps, Deployment, CI/CD, Platforms -->
+    <!-- ... Same structure as before, using only HTML + CSS ... -->
+
+    <!-- Example: Step Card (hover effect remains via CSS) -->
+    <div class="step-card bg-white p-6 rounded-lg shadow-sm mb-4">
+        <h3 class="text-lg font-semibold mb-2">Prepare Your Website Files</h3>
+        <p>Create a folder with your HTML and CSS files.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 DevOps for Beginners. Made for new learners.</p>
+        </div>
+    </footer>
+</body>
+</html>
